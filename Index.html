@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khuzaima Irfan - AI/ML Engineer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fadeIn {
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    .delay-100 {
+      animation-delay: 0.1s;
+    }
+
+    .delay-200 {
+      animation-delay: 0.2s;
+    }
+
+    .delay-300 {
+      animation-delay: 0.3s;
+    }
+
+    #skills i {
+      transition: transform 0.3s ease;
+    }
+
+    #skills i:hover {
+      transform: scale(1.2);
+    }
+
+    .project-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(14, 14, 14, 0.1);
+    }
+
+ 
+
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-gray-50 to-gray-100 font-sans text-gray-800">
+  <!-- Navigation -->
+  <nav class="fixed w-full bg-white bg-opacity-90 shadow-sm backdrop-blur-sm z-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <a href="#" class="text-2xl font-bold text-indigo-600">Khuzaima Irfan</a>
+        <div class="hidden md:flex space-x-8">
+          <a href="#about" class="hover:text-indigo-600 transition">About</a>
+          <a href="#skills" class="hover:text-indigo-600 transition">Skills</a>
+          <a href="#projects" class="hover:text-indigo-600 transition">Projects</a>
+          <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
+        </div>
+        <button class="md:hidden focus:outline-none" id="menu-btn">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div class="md:hidden hidden bg-white py-4 px-4" id="mobile-menu">
+      <div class="flex flex-col space-y-3">
+        <a href="#about" class="block px-3 py-2 hover:text-indigo-600">About</a>
+        <a href="#skills" class="block px-3 py-2 hover:text-indigo-600">Skills</a>
+        <a href="#projects" class="block px-3 py-2 hover:text-indigo-600">Projects</a>
+        <a href="#contact" class="block px-3 py-2 hover:text-indigo-600">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center pt-20">
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="animate-fadeIn">
+          <h1 class="text-4xl md:text-6xl font-bold mb-4">Khuzaima Irfan</h1>
+          <h2 class="text-2xl md:text-3xl text-indigo-600 mb-6">Web Development & AI/ML Enthusiast</h2>
+          <p class="text-lg text-gray-600 mb-8 max-w-lg">
+            I have hands-on experience in building responsive web interfaces using HTML, CSS, and JavaScript. Currently,
+            I'm expanding my skillset by diving into Python and its libraries (like NumPy, Pandas, and Matplotlib) as
+            part of my journey into Artificial Intelligence and Machine Learning. I'm actively learning ML fundamentals
+            and preparing to implement basic machine learning models soon.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#contact"
+              class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition duration-300">Contact
+              Me</a>
+            <a href="#projects"
+              class="border border-indigo-600 text-indigo-600 px-6 py-3 rounded-lg hover:bg-indigo-50 transition duration-300">View
+              Work</a>
+          </div>
+        </div>
+        <div class="animate-fadeIn delay-100 hidden md:block">
+          <img src="./Images/IMG_0091.jpg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 animate-fadeIn">About Me</h2>
+      <div class="grid md:grid-cols-2 gap-12 items-center animate-fadeIn delay-100">
+        <div>
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1672fe03-80b0-4a69-80ba-ad68fb307f30.png"
+            alt="Khuzaima Irfan presenting at a tech conference with machine learning visualizations on screen"
+            class="rounded-xl shadow-lg">
+        </div>
+        <div>
+          <p class="text-lg mb-4">
+            I'm a passionate Frontend Developer with hands-on experience in building responsive websites using HTML,
+            CSS, and JavaScript. Currently pursuing a Bachelor's degree in Artificial Intelligence at Dawood University,
+            I'm actively expanding my skillset by learning Python and exploring core AI/ML concepts.
+          </p>
+          <p class="text-lg mb-6">
+            Through internships
+            and self-initiated projects, I've begun working with libraries like NumPy, Pandas, and scikit-learn, with a
+            growing interest in data-driven development and real-world problem-solving using machine learning.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <div class="bg-indigo-50 text-indigo-600 px-4 py-2 rounded-full">
+              <span>Artificial Intelligence</span>
+            </div>
+            <div class="bg-indigo-50 text-indigo-600 px-4 py-2 rounded-full">
+              <span>Machine Learning</span>
+            </div>
+            <div class="bg-indigo-50 text-indigo-600 px-4 py-2 rounded-full">
+              <span>Frontend Development</span>
+            </div>
+            <div class="bg-indigo-50 text-indigo-600 px-4 py-2 rounded-full">
+              <span>Problem Solving</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 animate-fadeIn">Technical Skills</h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 animate-fadeIn delay-100">
+        <!-- Python -->
+        <div class="bg-white p-6 rounded-xl shadow-md flex flex-col items-center text-center">
+          <i class="fab fa-python text-5xl text-indigo-600 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Python</h3>
+          <p class="text-gray-600">Advanced expertise in Python for machine learning, data analysis, and backend
+            development.</p>
+          <div class="mt-4 flex space-x-2">
+            <div class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-sm">TensorFlow</div>
+            <div class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-sm">PyTorch</div>
+            <div class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-sm">Django</div>
+          </div>
+        </div>
+
+        <!-- HTML/CSS -->
+        <div class="bg-white p-6 rounded-xl shadow-md flex flex-col items-center text-center">
+          <i class="fas fa-code text-5xl text-indigo-600 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">HTML & CSS</h3>
+          <p class="text-gray-600">Modern responsive web design with semantic HTML and advanced CSS techniques.</p>
+          <div class="mt-4 flex space-x-2">
+            <div class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-sm">Tailwind</div>
+            <div class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-sm">Flexbox</div>
+            <div class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-sm">Grid</div>
+          </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="bg-white p-6 rounded-xl shadow-md flex flex-col items-center text-center">
+          <i class="fab fa-js-square text-5xl text-indigo-600 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">JavaScript</h3>
+          <p class="text-gray-600">Interactive web applications with modern JavaScript frameworks and libraries.</p>
+          <div class="mt-4 flex space-x-2">
+            <div class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-sm">React</div>
+            <div class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-sm">Node.js</div>
+            <!-- <div class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-sm">ES6+</div> -->
+          </div>
+        </div>
+
+        <!-- AI/ML -->
+        <div class="bg-white p-6 rounded-xl shadow-md flex flex-col items-center text-center">
+          <i class="fas fa-brain text-5xl text-indigo-600 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">AI/ML</h3>
+          <p class="text-gray-600">Building and deploying machine learning models for real-world applications.</p>
+          <div class="mt-4 flex space-x-2">
+            <!-- <div class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-sm">Deep Learning</div> -->
+            <!-- <div class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-sm">NLP</div> -->
+            <div class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-sm">Computer Vision</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 animate-fadeIn">Featured Projects</h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 animate-fadeIn delay-100">
+        <!-- Project 1 -->
+        <div class="project-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+          <div class="h-48 overflow-hidden">
+            <img
+              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bf4f8d50-ea98-4b05-8251-355a28a7b96c.png"
+              alt="Dashboard interface showing machine learning model training metrics and performance charts"
+              class="w-full h-full object-cover">
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-xl font-semibold">Credit Risk Analysis</h3>
+              <span class="bg-indigo-100 text-indigo-600 px-2 py-1 rounded-full text-xs">Python</span>
+              <a href="https://github.com/KhuzaimaIrfan/Credit-Risk-Analysis"
+                class="bg-gray-100 text-gray-600 px-2 py-1 rounded-full text-xs">GitHub</a>
+
+            </div>
+            <p class="text-gray-600 mb-4">Developed an ML model to predict loan default risk using customer financial
+              data. Focused on preprocessing, feature engineering, and evaluation.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded-full text-xs">pandas</span>
+              <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded-full text-xs">numpy</span>
+              <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded-full text-xs">sickit-learn</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+          <div class="h-48 overflow-hidden">
+            <img
+              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/00c5b96f-274b-487f-be3f-4d5ec77e041d.png"
+              alt="Sentiment analysis tool interface with sample text input and colorful sentiment visualization results"
+              class="w-full h-full object-cover">
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-xl font-semibold">Finance-Stock-Market</h3>
+              <span class="bg-indigo-100 text-indigo-600 px-2 py-1 rounded-full text-xs">Python</span>
+              <a href="https://github.com/KhuzaimaIrfan/Finance-Stock-Market"
+                class="bg-gray-100 text-gray-600 px-2 py-1 rounded-full text-xs">GitHub</a>
+            </div>
+            <p class="text-gray-600 mb-4">Used LSTM to predict stock prices and Isolation Forest to detect anomalies in
+              time series data. Achieved high accuracy with key financial indicators..</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded-full text-xs">Pandas</span>
+              <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded-full text-xs">NumPy</span>
+              <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded-full text-xs">Matplotlib</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+          <div class="h-48 overflow-hidden">
+            <img
+              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/483aa773-cebc-4d29-b090-262003f08b74.png"
+              alt="Responsive web application showing different screen sizes and layouts adapting to various device dimensions"
+              class="w-full h-full object-cover">
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-xl font-semibold">Responsive Web App</h3>
+              <span class="bg-indigo-100 text-indigo-600 px-2 py-1 rounded-full text-xs">Web</span>
+            </div>
+            <p class="text-gray-600 mb-4">Modern responsive web application with seamless performance across all
+              devices.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded-full text-xs">HTML5</span>
+              <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded-full text-xs">CSS3</span>
+              <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded-full text-xs">JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-12 animate-fadeIn delay-200">
+        <a href="#" class="inline-flex items-center text-indigo-600 hover:text-indigo-800">
+          <span>View All Projects</span>
+          <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 animate-fadeIn">Get In Touch</h2>
+
+      <div class="grid md:grid-cols-2 gap-12 animate-fadeIn delay-100">
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Let's Connect</h3>
+          <p class="text-gray-600 mb-6">
+            Interested in working together or have questions about my work? Feel free to reach out through this form or
+            connect with me on social media.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-center">
+              <i class="fas fa-envelope text-indigo-600 mr-4"></i>
+              <span>khuzaimairfan26@example.com</span>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-phone-alt text-indigo-600 mr-4"></i>
+              <span>+923422666513</span>
+            </div>
+          </div>
+          <div class="mt-8">
+            <h4 class="font-semibold mb-4">Follow Me</h4>
+            <div class="flex space-x-4">
+              <a href="https://github.com/KhuzaimaIrfan" class="text-gray-600 hover:text-indigo-600 transition"><i
+                  class="fab fa-github fa-lg"></i></a>
+              <a href="https://www.linkedin.com/in/khuzaima-irfan-2b0800268/"
+                class="text-gray-600 hover:text-indigo-600 transition"><i class="fab fa-linkedin fa-lg"></i></a>
+              <a href="#" class="text-gray-600 hover:text-indigo-600 transition"><i
+                  class="fab fa-twitter fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <form class="space-y-6">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+              <input type="text" id="name"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-indigo-600"
+                required>
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+              <input type="email" id="email"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-indigo-600"
+                required>
+            </div>
+            <div>
+              <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+              <input type="text" id="subject"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-indigo-600"
+                required>
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+              <textarea id="message" rows="4"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-indigo-600"
+                required></textarea>
+            </div>
+            <button type="submit"
+              class="w-full bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition duration-300">Send
+              Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white py-8 border-t border-gray-200">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0">
+          <span class="text-lg font-semibold text-gray-800">Khuzaima Irfan</span>
+          <p class="text-gray-600">AI/ML Engineer</p>
+        </div>
+        <div>
+          <p class="text-gray-500 text-sm">© 2023 All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        mobileMenu.classList.add('hidden');
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Animation on scroll
+    const animateElements = document.querySelectorAll('.animate-fadeIn');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    animateElements.forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+
+</html>
